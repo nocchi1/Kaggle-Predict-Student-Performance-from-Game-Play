@@ -1,0 +1,15 @@
+[2023-07-04 19:22:55.830319] EXP NAME: 088
+----------------------------------------------------------------------------------------------------
+
+[HyperParameters]
+
+exp: 088 
+fold: 5 
+input_path: ../data/input 
+model_type: xgb 
+output_path: ../data/output/exp_088 
+run_type: all 
+seed: 77 
+xgb_params: {'objective': 'binary:logistic', 'eval_metric': 'logloss', 'tree_method': 'gpu_hist', 'learning_rate': 0.01, 'max_depth': 4, 'max_leaves': 16, 'subsample': 0.8, 'colsample_bytree': 0.4, 'seed': 77} 
+
+----------------------------------------------------------------------------------------------------

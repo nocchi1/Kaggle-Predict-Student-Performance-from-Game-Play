@@ -1,0 +1,299 @@
+[2023-07-07 01:30:31.297434] EXP NAME: 165
+----------------------------------------------------------------------------------------------------
+
+[HyperParameters]
+
+T_mult: 1 
+cat_cols: ['text_fqid', 'event_name', 'name', 'room_fqid'] 
+cat_emb_dim: [8, 32, 8] 
+dense_dim: 128 
+device: cpu 
+dim_ff: 512 
+epochs: 30 
+eta_min: 1e-07 
+exp: 165 
+fold: 5 
+input_path: ../data/input 
+log: True 
+lr: 0.0005 
+max_len: {0: 384, 1: 768, 2: 1024} 
+nhead: 8 
+num_cols: ['elapsed_time'] 
+num_layers: 1 
+output_path: ../data/output/exp_165 
+prev_group_window: 30 
+q_out_dict: {0: 3, 1: 10, 2: 5} 
+run_type: all 
+seed: 10 
+table_path: ../data/output/exp_047 
+tfm_drop_out: 0.1 
+train_batch: 64 
+use_cols: ['load_index', 'index', 'session_id', 'level', 'level_group', 'elapsed_time', 'text_fqid', 'event_name', 'name', 'room_fqid'] 
+use_fold: 5 
+use_prev_group: False 
+valid_batch: 128 
+weight_decay: 0.0 
+
+----------------------------------------------------------------------------------------------------
+
+[2023-07-07 01:30:39.369987][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 1] -->>  Loss: 0.3799, LR: 0.00050000
+[2023-07-07 01:30:39.802867][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 1] -->>  Loss: 0.4098, Score: 0.5128, Threshold: 0.8000
+[2023-07-07 01:30:43.447713][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 2] -->>  Loss: 0.3921, LR: 0.00050000
+[2023-07-07 01:30:43.816602][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 2] -->>  Loss: 0.4187, Score: 0.7205, Threshold: 0.7000
+[2023-07-07 01:30:47.601116][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 3] -->>  Loss: 0.3511, LR: 0.00050000
+[2023-07-07 01:30:48.031140][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 3] -->>  Loss: 0.3664, Score: 0.6118, Threshold: 0.8000
+[2023-07-07 01:30:51.977820][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 4] -->>  Loss: 0.3159, LR: 0.00050000
+[2023-07-07 01:30:52.368477][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 4] -->>  Loss: 0.3260, Score: 0.7394, Threshold: 0.7000
+[2023-07-07 01:30:55.689427][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 5] -->>  Loss: 0.3213, LR: 0.00050000
+[2023-07-07 01:30:56.202826][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 5] -->>  Loss: 0.3102, Score: 0.7466, Threshold: 0.5600
+[2023-07-07 01:30:59.650699][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 6] -->>  Loss: 0.3127, LR: 0.00050000
+[2023-07-07 01:31:00.192162][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 6] -->>  Loss: 0.3026, Score: 0.7400, Threshold: 0.7000
+[2023-07-07 01:31:03.455532][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 7] -->>  Loss: 0.2988, LR: 0.00050000
+[2023-07-07 01:31:03.895882][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 7] -->>  Loss: 0.3143, Score: 0.7400, Threshold: 0.7600
+[2023-07-07 01:31:07.248420][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 8] -->>  Loss: 0.3006, LR: 0.00050000
+[2023-07-07 01:31:07.766597][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 8] -->>  Loss: 0.2946, Score: 0.7386, Threshold: 0.6500
+[2023-07-07 01:31:11.145369][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 9] -->>  Loss: 0.2933, LR: 0.00050000
+[2023-07-07 01:31:11.669871][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 9] -->>  Loss: 0.3170, Score: 0.7386, Threshold: 0.7700
+[2023-07-07 01:31:15.222040][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 10] -->>  Loss: 0.3017, LR: 0.00050000
+[2023-07-07 01:31:15.638066][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 10] -->>  Loss: 0.3146, Score: 0.7394, Threshold: 0.7900
+[2023-07-07 01:31:19.145054][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 11] -->>  Loss: 0.2991, LR: 0.00050000
+[2023-07-07 01:31:19.507074][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 11] -->>  Loss: 0.2883, Score: 0.7462, Threshold: 0.6500
+[2023-07-07 01:31:22.799409][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 12] -->>  Loss: 0.2895, LR: 0.00050000
+[2023-07-07 01:31:23.324006][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 12] -->>  Loss: 0.3058, Score: 0.7430, Threshold: 0.7300
+[2023-07-07 01:31:26.503293][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 13] -->>  Loss: 0.2909, LR: 0.00050000
+[2023-07-07 01:31:26.972141][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 13] -->>  Loss: 0.2990, Score: 0.7445, Threshold: 0.7100
+[2023-07-07 01:31:30.087113][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 14] -->>  Loss: 0.2843, LR: 0.00050000
+[2023-07-07 01:31:30.566840][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 14] -->>  Loss: 0.2886, Score: 0.7386, Threshold: 0.6600
+[2023-07-07 01:31:33.877606][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 15] -->>  Loss: 0.2867, LR: 0.00050000
+[2023-07-07 01:31:34.337476][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 15] -->>  Loss: 0.2986, Score: 0.7462, Threshold: 0.7400
+[2023-07-07 01:31:37.548164][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 16] -->>  Loss: 0.2755, LR: 0.00050000
+[2023-07-07 01:31:37.992592][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 16] -->>  Loss: 0.3180, Score: 0.7508, Threshold: 0.7600
+[2023-07-07 01:31:41.345636][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 17] -->>  Loss: 0.2820, LR: 0.00050000
+[2023-07-07 01:31:41.822315][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 17] -->>  Loss: 0.2887, Score: 0.7532, Threshold: 0.6700
+[2023-07-07 01:31:44.854742][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 18] -->>  Loss: 0.2770, LR: 0.00050000
+[2023-07-07 01:31:45.220356][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 18] -->>  Loss: 0.3107, Score: 0.7520, Threshold: 0.7500
+[2023-07-07 01:31:48.455115][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 19] -->>  Loss: 0.2818, LR: 0.00050000
+[2023-07-07 01:31:48.874269][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 19] -->>  Loss: 0.2880, Score: 0.7462, Threshold: 0.7000
+[2023-07-07 01:31:52.008062][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 20] -->>  Loss: 0.2738, LR: 0.00050000
+[2023-07-07 01:31:52.409494][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 20] -->>  Loss: 0.3080, Score: 0.7520, Threshold: 0.7300
+[2023-07-07 01:31:55.598532][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 21] -->>  Loss: 0.2667, LR: 0.00050000
+[2023-07-07 01:31:56.005372][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 21] -->>  Loss: 0.2981, Score: 0.7335, Threshold: 0.7600
+[2023-07-07 01:31:59.170860][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 22] -->>  Loss: 0.2648, LR: 0.00050000
+[2023-07-07 01:31:59.864002][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 22] -->>  Loss: 0.3155, Score: 0.7532, Threshold: 0.7800
+[2023-07-07 01:32:04.637728][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 23] -->>  Loss: 0.2610, LR: 0.00050000
+[2023-07-07 01:32:05.165565][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 23] -->>  Loss: 0.3111, Score: 0.7466, Threshold: 0.7800
+[2023-07-07 01:32:09.551209][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 24] -->>  Loss: 0.2713, LR: 0.00050000
+[2023-07-07 01:32:09.950007][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 24] -->>  Loss: 0.3107, Score: 0.7603, Threshold: 0.7600
+[2023-07-07 01:32:13.324390][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 25] -->>  Loss: 0.2789, LR: 0.00050000
+[2023-07-07 01:32:13.787543][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 25] -->>  Loss: 0.3790, Score: 0.6906, Threshold: 0.7600
+[2023-07-07 01:32:16.855835][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 26] -->>  Loss: 0.2785, LR: 0.00050000
+[2023-07-07 01:32:17.188405][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 26] -->>  Loss: 0.2935, Score: 0.7467, Threshold: 0.5300
+[2023-07-07 01:32:20.436420][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 27] -->>  Loss: 0.2702, LR: 0.00050000
+[2023-07-07 01:32:20.799370][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 27] -->>  Loss: 0.3581, Score: 0.6835, Threshold: 0.7300
+[2023-07-07 01:32:24.197639][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 28] -->>  Loss: 0.2585, LR: 0.00050000
+[2023-07-07 01:32:24.565828][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 28] -->>  Loss: 0.3084, Score: 0.7317, Threshold: 0.7500
+[2023-07-07 01:32:28.337145][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 29] -->>  Loss: 0.2635, LR: 0.00050000
+[2023-07-07 01:32:28.658514][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 29] -->>  Loss: 0.2998, Score: 0.7251, Threshold: 0.7100
+[2023-07-07 01:32:31.639314][Train Model] -->> Train[Level Group: 0, Fold: 0, Epoch: 30] -->>  Loss: 0.2561, LR: 0.00050000
+[2023-07-07 01:32:31.933528][Train Model] -->> Valid[Level Group: 0, Fold: 0, Epoch: 30] -->>  Loss: 0.3336, Score: 0.7144, Threshold: 0.7800
+[2023-07-07 01:32:31.937464][Evaluation] -->> 	 Fold: 0, Level Group: 0 -->> Best Loss: 0.2880, Best Score: 0.7462 (0.700) Best Epoch: 18 	
+[2023-07-07 01:32:44.939655][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 1] -->>  Loss: 0.6958, LR: 0.00050000
+[2023-07-07 01:32:45.725931][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 1] -->>  Loss: 0.6384, Score: 0.6277, Threshold: 0.6900
+[2023-07-07 01:33:02.555299][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 2] -->>  Loss: 0.6706, LR: 0.00050000
+[2023-07-07 01:33:03.879138][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 2] -->>  Loss: 0.6719, Score: 0.6447, Threshold: 0.4800
+[2023-07-07 01:33:17.549205][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 3] -->>  Loss: 0.6499, LR: 0.00050000
+[2023-07-07 01:33:18.292326][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 3] -->>  Loss: 0.6474, Score: 0.6638, Threshold: 0.7400
+[2023-07-07 01:33:34.283642][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 4] -->>  Loss: 0.6617, LR: 0.00050000
+[2023-07-07 01:33:35.072235][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 4] -->>  Loss: 0.6336, Score: 0.6623, Threshold: 0.7200
+[2023-07-07 01:33:47.735791][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 5] -->>  Loss: 0.6250, LR: 0.00050000
+[2023-07-07 01:33:48.541920][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 5] -->>  Loss: 0.6052, Score: 0.6536, Threshold: 0.5600
+[2023-07-07 01:33:59.173608][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 6] -->>  Loss: 0.5990, LR: 0.00050000
+[2023-07-07 01:33:59.900816][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 6] -->>  Loss: 0.5962, Score: 0.6604, Threshold: 0.6000
+[2023-07-07 01:34:11.026890][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 7] -->>  Loss: 0.5919, LR: 0.00050000
+[2023-07-07 01:34:11.775933][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 7] -->>  Loss: 0.5863, Score: 0.6616, Threshold: 0.6900
+[2023-07-07 01:34:22.749697][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 8] -->>  Loss: 0.5854, LR: 0.00050000
+[2023-07-07 01:34:23.453975][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 8] -->>  Loss: 0.5784, Score: 0.6659, Threshold: 0.7000
+[2023-07-07 01:34:34.412321][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 9] -->>  Loss: 0.5646, LR: 0.00050000
+[2023-07-07 01:34:35.131263][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 9] -->>  Loss: 0.5759, Score: 0.6733, Threshold: 0.5900
+[2023-07-07 01:34:45.992702][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 10] -->>  Loss: 0.5563, LR: 0.00050000
+[2023-07-07 01:34:46.701933][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 10] -->>  Loss: 0.5703, Score: 0.6762, Threshold: 0.6200
+[2023-07-07 01:34:57.611681][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 11] -->>  Loss: 0.5476, LR: 0.00050000
+[2023-07-07 01:34:58.332871][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 11] -->>  Loss: 0.5712, Score: 0.6743, Threshold: 0.6600
+[2023-07-07 01:35:09.946283][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 12] -->>  Loss: 0.5450, LR: 0.00050000
+[2023-07-07 01:35:10.693627][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 12] -->>  Loss: 0.5716, Score: 0.6740, Threshold: 0.6200
+[2023-07-07 01:35:20.574520][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 13] -->>  Loss: 0.5523, LR: 0.00050000
+[2023-07-07 01:35:21.283912][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 13] -->>  Loss: 0.5731, Score: 0.6677, Threshold: 0.6600
+[2023-07-07 01:35:31.440775][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 14] -->>  Loss: 0.5433, LR: 0.00050000
+[2023-07-07 01:35:32.152190][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 14] -->>  Loss: 0.5838, Score: 0.6723, Threshold: 0.6800
+[2023-07-07 01:35:42.808122][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 15] -->>  Loss: 0.5478, LR: 0.00050000
+[2023-07-07 01:35:43.535737][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 15] -->>  Loss: 0.5731, Score: 0.6715, Threshold: 0.5500
+[2023-07-07 01:35:54.372280][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 16] -->>  Loss: 0.5379, LR: 0.00050000
+[2023-07-07 01:35:55.090421][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 16] -->>  Loss: 0.5681, Score: 0.6821, Threshold: 0.6200
+[2023-07-07 01:36:06.070961][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 17] -->>  Loss: 0.5375, LR: 0.00050000
+[2023-07-07 01:36:06.790853][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 17] -->>  Loss: 0.5688, Score: 0.6806, Threshold: 0.6400
+[2023-07-07 01:36:17.846472][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 18] -->>  Loss: 0.5364, LR: 0.00050000
+[2023-07-07 01:36:18.758138][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 18] -->>  Loss: 0.5689, Score: 0.6843, Threshold: 0.5600
+[2023-07-07 01:36:29.367634][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 19] -->>  Loss: 0.5364, LR: 0.00050000
+[2023-07-07 01:36:30.120149][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 19] -->>  Loss: 0.5676, Score: 0.6850, Threshold: 0.6200
+[2023-07-07 01:36:40.944339][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 20] -->>  Loss: 0.5367, LR: 0.00050000
+[2023-07-07 01:36:41.662850][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 20] -->>  Loss: 0.5697, Score: 0.6771, Threshold: 0.5900
+[2023-07-07 01:36:52.590423][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 21] -->>  Loss: 0.5349, LR: 0.00050000
+[2023-07-07 01:36:53.295948][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 21] -->>  Loss: 0.5715, Score: 0.6768, Threshold: 0.5200
+[2023-07-07 01:37:04.239044][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 22] -->>  Loss: 0.5394, LR: 0.00050000
+[2023-07-07 01:37:04.943198][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 22] -->>  Loss: 0.5738, Score: 0.6824, Threshold: 0.6600
+[2023-07-07 01:37:16.137869][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 23] -->>  Loss: 0.5331, LR: 0.00050000
+[2023-07-07 01:37:16.949066][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 23] -->>  Loss: 0.5705, Score: 0.6736, Threshold: 0.6000
+[2023-07-07 01:37:28.250158][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 24] -->>  Loss: 0.5303, LR: 0.00050000
+[2023-07-07 01:37:28.952596][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 24] -->>  Loss: 0.5690, Score: 0.6777, Threshold: 0.6400
+[2023-07-07 01:37:39.606665][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 25] -->>  Loss: 0.5317, LR: 0.00050000
+[2023-07-07 01:37:40.311254][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 25] -->>  Loss: 0.5634, Score: 0.6809, Threshold: 0.5700
+[2023-07-07 01:37:51.256712][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 26] -->>  Loss: 0.5264, LR: 0.00050000
+[2023-07-07 01:37:51.963146][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 26] -->>  Loss: 0.5640, Score: 0.6809, Threshold: 0.6100
+[2023-07-07 01:38:02.906528][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 27] -->>  Loss: 0.5247, LR: 0.00050000
+[2023-07-07 01:38:03.609545][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 27] -->>  Loss: 0.5635, Score: 0.6761, Threshold: 0.5700
+[2023-07-07 01:38:14.583902][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 28] -->>  Loss: 0.5324, LR: 0.00050000
+[2023-07-07 01:38:15.304816][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 28] -->>  Loss: 0.5674, Score: 0.6768, Threshold: 0.5900
+[2023-07-07 01:38:26.766626][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 29] -->>  Loss: 0.5458, LR: 0.00050000
+[2023-07-07 01:38:27.510967][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 29] -->>  Loss: 0.5899, Score: 0.6761, Threshold: 0.7700
+[2023-07-07 01:38:38.651797][Train Model] -->> Train[Level Group: 1, Fold: 0, Epoch: 30] -->>  Loss: 0.5444, LR: 0.00050000
+[2023-07-07 01:38:39.371420][Train Model] -->> Valid[Level Group: 1, Fold: 0, Epoch: 30] -->>  Loss: 0.5842, Score: 0.6803, Threshold: 0.4500
+[2023-07-07 01:38:39.384606][Evaluation] -->> 	 Fold: 0, Level Group: 1 -->> Best Loss: 0.5634, Best Score: 0.6809 (0.570) Best Epoch: 24 	
+[2023-07-07 01:38:57.767774][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 1] -->>  Loss: 0.8851, LR: 0.00050000
+[2023-07-07 01:38:58.907512][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 1] -->>  Loss: 0.6088, Score: 0.4894, Threshold: 0.7300
+[2023-07-07 01:39:17.611195][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 2] -->>  Loss: 0.6655, LR: 0.00050000
+[2023-07-07 01:39:18.745674][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 2] -->>  Loss: 0.6449, Score: 0.4407, Threshold: 0.7900
+[2023-07-07 01:39:37.275239][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 3] -->>  Loss: 0.6480, LR: 0.00050000
+[2023-07-07 01:39:38.415656][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 3] -->>  Loss: 0.5977, Score: 0.5165, Threshold: 0.7300
+[2023-07-07 01:39:57.481113][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 4] -->>  Loss: 0.6158, LR: 0.00050000
+[2023-07-07 01:39:58.621544][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 4] -->>  Loss: 0.6102, Score: 0.5407, Threshold: 0.6100
+[2023-07-07 01:40:17.385636][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 5] -->>  Loss: 0.6271, LR: 0.00050000
+[2023-07-07 01:40:18.554905][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 5] -->>  Loss: 0.6167, Score: 0.5655, Threshold: 0.5900
+[2023-07-07 01:40:37.717818][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 6] -->>  Loss: 0.6175, LR: 0.00050000
+[2023-07-07 01:40:38.886963][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 6] -->>  Loss: 0.5919, Score: 0.5706, Threshold: 0.6700
+[2023-07-07 01:40:59.347605][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 7] -->>  Loss: 0.6133, LR: 0.00050000
+[2023-07-07 01:41:01.016354][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 7] -->>  Loss: 0.5872, Score: 0.5680, Threshold: 0.7200
+[2023-07-07 01:41:21.140798][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 8] -->>  Loss: 0.6080, LR: 0.00050000
+[2023-07-07 01:41:22.283213][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 8] -->>  Loss: 0.5841, Score: 0.5666, Threshold: 0.7300
+[2023-07-07 01:41:41.166218][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 9] -->>  Loss: 0.6022, LR: 0.00050000
+[2023-07-07 01:41:42.316756][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 9] -->>  Loss: 0.5818, Score: 0.5908, Threshold: 0.6900
+[2023-07-07 01:42:02.564984][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 10] -->>  Loss: 0.5986, LR: 0.00050000
+[2023-07-07 01:42:03.780735][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 10] -->>  Loss: 0.5827, Score: 0.5957, Threshold: 0.6600
+[2023-07-07 01:42:25.054890][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 11] -->>  Loss: 0.5918, LR: 0.00050000
+[2023-07-07 01:42:26.340193][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 11] -->>  Loss: 0.5802, Score: 0.6084, Threshold: 0.6400
+[2023-07-07 01:42:49.283334][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 12] -->>  Loss: 0.5834, LR: 0.00050000
+[2023-07-07 01:42:50.541807][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 12] -->>  Loss: 0.5684, Score: 0.6354, Threshold: 0.6700
+[2023-07-07 01:43:11.274186][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 13] -->>  Loss: 0.5738, LR: 0.00050000
+[2023-07-07 01:43:12.489873][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 13] -->>  Loss: 0.5609, Score: 0.6280, Threshold: 0.6800
+[2023-07-07 01:43:32.557495][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 14] -->>  Loss: 0.5633, LR: 0.00050000
+[2023-07-07 01:43:33.771007][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 14] -->>  Loss: 0.5554, Score: 0.6289, Threshold: 0.6200
+[2023-07-07 01:43:54.377886][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 15] -->>  Loss: 0.5477, LR: 0.00050000
+[2023-07-07 01:43:55.903328][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 15] -->>  Loss: 0.5510, Score: 0.6379, Threshold: 0.5800
+[2023-07-07 01:44:16.654373][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 16] -->>  Loss: 0.5375, LR: 0.00050000
+[2023-07-07 01:44:17.961555][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 16] -->>  Loss: 0.5476, Score: 0.6351, Threshold: 0.5500
+[2023-07-07 01:44:38.243179][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 17] -->>  Loss: 0.5268, LR: 0.00050000
+[2023-07-07 01:44:39.493228][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 17] -->>  Loss: 0.5415, Score: 0.6511, Threshold: 0.5500
+[2023-07-07 01:45:00.809828][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 18] -->>  Loss: 0.5243, LR: 0.00050000
+[2023-07-07 01:45:02.041238][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 18] -->>  Loss: 0.5423, Score: 0.6518, Threshold: 0.4900
+[2023-07-07 01:45:22.672214][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 19] -->>  Loss: 0.5161, LR: 0.00050000
+[2023-07-07 01:45:23.981417][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 19] -->>  Loss: 0.5368, Score: 0.6453, Threshold: 0.4600
+[2023-07-07 01:45:44.670015][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 20] -->>  Loss: 0.5162, LR: 0.00050000
+[2023-07-07 01:45:45.845623][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 20] -->>  Loss: 0.5265, Score: 0.6358, Threshold: 0.5000
+[2023-07-07 01:46:04.971468][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 21] -->>  Loss: 0.5141, LR: 0.00050000
+[2023-07-07 01:46:06.175752][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 21] -->>  Loss: 0.5302, Score: 0.6470, Threshold: 0.5300
+[2023-07-07 01:46:27.800348][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 22] -->>  Loss: 0.5116, LR: 0.00050000
+[2023-07-07 01:46:29.298543][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 22] -->>  Loss: 0.5371, Score: 0.6447, Threshold: 0.5300
+[2023-07-07 01:46:52.774649][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 23] -->>  Loss: 0.5135, LR: 0.00050000
+[2023-07-07 01:46:54.038881][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 23] -->>  Loss: 0.5406, Score: 0.6420, Threshold: 0.5600
+[2023-07-07 01:47:16.301683][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 24] -->>  Loss: 0.5134, LR: 0.00050000
+[2023-07-07 01:47:17.795495][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 24] -->>  Loss: 0.5421, Score: 0.6307, Threshold: 0.6700
+[2023-07-07 01:47:41.992982][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 25] -->>  Loss: 0.5208, LR: 0.00050000
+[2023-07-07 01:47:43.318282][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 25] -->>  Loss: 0.5463, Score: 0.6387, Threshold: 0.4700
+[2023-07-07 01:48:04.276156][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 26] -->>  Loss: 0.5125, LR: 0.00050000
+[2023-07-07 01:48:05.699094][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 26] -->>  Loss: 0.5469, Score: 0.6327, Threshold: 0.6800
+[2023-07-07 01:48:26.241000][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 27] -->>  Loss: 0.5134, LR: 0.00050000
+[2023-07-07 01:48:27.416603][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 27] -->>  Loss: 0.5331, Score: 0.6384, Threshold: 0.4800
+[2023-07-07 01:48:46.775839][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 28] -->>  Loss: 0.5108, LR: 0.00050000
+[2023-07-07 01:48:48.161188][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 28] -->>  Loss: 0.5290, Score: 0.6356, Threshold: 0.5800
+[2023-07-07 01:49:09.487648][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 29] -->>  Loss: 0.5057, LR: 0.00050000
+[2023-07-07 01:49:10.862836][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 29] -->>  Loss: 0.5333, Score: 0.6372, Threshold: 0.7000
+[2023-07-07 01:49:32.521655][Train Model] -->> Train[Level Group: 2, Fold: 0, Epoch: 30] -->>  Loss: 0.5060, LR: 0.00050000
+[2023-07-07 01:49:33.746042][Train Model] -->> Valid[Level Group: 2, Fold: 0, Epoch: 30] -->>  Loss: 0.5323, Score: 0.6356, Threshold: 0.5200
+[2023-07-07 01:49:33.750073][Evaluation] -->> 	 Fold: 0, Level Group: 2 -->> Best Loss: 0.5265, Best Score: 0.6358 (0.500) Best Epoch: 19 	
+[2023-07-07 01:49:33.803309][Fold Evaluation] -->> ####################	 Fold: 0, -->> OverAll Score: 0.6758 (0.610) 	####################
+[2023-07-07 01:49:36.888080][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 1] -->>  Loss: 0.4545, LR: 0.00050000
+[2023-07-07 01:49:37.114497][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 1] -->>  Loss: 0.2756, Score: 0.4798, Threshold: 0.4000
+[2023-07-07 01:49:40.917492][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 2] -->>  Loss: 0.4170, LR: 0.00050000
+[2023-07-07 01:49:41.149880][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 2] -->>  Loss: 0.3684, Score: 0.6012, Threshold: 0.7300
+[2023-07-07 01:49:44.673353][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 3] -->>  Loss: 0.4324, LR: 0.00050000
+[2023-07-07 01:49:44.883991][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 3] -->>  Loss: 0.3647, Score: 0.6296, Threshold: 0.7100
+[2023-07-07 01:49:48.330944][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 4] -->>  Loss: 0.3977, LR: 0.00050000
+[2023-07-07 01:49:48.586391][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 4] -->>  Loss: 0.3087, Score: 0.6344, Threshold: 0.7600
+[2023-07-07 01:49:52.038673][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 5] -->>  Loss: 0.3690, LR: 0.00050000
+[2023-07-07 01:49:52.254717][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 5] -->>  Loss: 0.2933, Score: 0.6227, Threshold: 0.7300
+[2023-07-07 01:49:55.276186][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 6] -->>  Loss: 0.3462, LR: 0.00050000
+[2023-07-07 01:49:55.497554][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 6] -->>  Loss: 0.3175, Score: 0.6170, Threshold: 0.6400
+[2023-07-07 01:49:59.007824][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 7] -->>  Loss: 0.3386, LR: 0.00050000
+[2023-07-07 01:49:59.226374][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 7] -->>  Loss: 0.3457, Score: 0.6063, Threshold: 0.5400
+[2023-07-07 01:50:03.116617][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 8] -->>  Loss: 0.3267, LR: 0.00050000
+[2023-07-07 01:50:03.358981][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 8] -->>  Loss: 0.3023, Score: 0.6163, Threshold: 0.5600
+[2023-07-07 01:50:08.152886][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 9] -->>  Loss: 0.3071, LR: 0.00050000
+[2023-07-07 01:50:08.446488][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 9] -->>  Loss: 0.3034, Score: 0.6536, Threshold: 0.5600
+[2023-07-07 01:50:13.183510][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 10] -->>  Loss: 0.3039, LR: 0.00050000
+[2023-07-07 01:50:13.454542][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 10] -->>  Loss: 0.2870, Score: 0.6677, Threshold: 0.5900
+[2023-07-07 01:50:17.393736][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 11] -->>  Loss: 0.3029, LR: 0.00050000
+[2023-07-07 01:50:17.634763][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 11] -->>  Loss: 0.2894, Score: 0.6752, Threshold: 0.5800
+[2023-07-07 01:50:21.786981][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 12] -->>  Loss: 0.2987, LR: 0.00050000
+[2023-07-07 01:50:22.053209][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 12] -->>  Loss: 0.2869, Score: 0.6752, Threshold: 0.5900
+[2023-07-07 01:50:26.329240][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 13] -->>  Loss: 0.3019, LR: 0.00050000
+[2023-07-07 01:50:26.631312][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 13] -->>  Loss: 0.2730, Score: 0.6727, Threshold: 0.6300
+[2023-07-07 01:50:30.898307][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 14] -->>  Loss: 0.2998, LR: 0.00050000
+[2023-07-07 01:50:31.155882][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 14] -->>  Loss: 0.2956, Score: 0.6752, Threshold: 0.5900
+[2023-07-07 01:50:35.308088][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 15] -->>  Loss: 0.2960, LR: 0.00050000
+[2023-07-07 01:50:35.538594][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 15] -->>  Loss: 0.3150, Score: 0.6752, Threshold: 0.5600
+[2023-07-07 01:50:39.130977][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 16] -->>  Loss: 0.2938, LR: 0.00050000
+[2023-07-07 01:50:39.508625][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 16] -->>  Loss: 0.2974, Score: 0.6812, Threshold: 0.5300
+[2023-07-07 01:50:44.181370][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 17] -->>  Loss: 0.2942, LR: 0.00050000
+[2023-07-07 01:50:44.462102][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 17] -->>  Loss: 0.2900, Score: 0.6812, Threshold: 0.5500
+[2023-07-07 01:50:48.561379][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 18] -->>  Loss: 0.2963, LR: 0.00050000
+[2023-07-07 01:50:48.778669][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 18] -->>  Loss: 0.3229, Score: 0.6812, Threshold: 0.4500
+[2023-07-07 01:50:52.841712][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 19] -->>  Loss: 0.2829, LR: 0.00050000
+[2023-07-07 01:50:53.071484][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 19] -->>  Loss: 0.2872, Score: 0.6812, Threshold: 0.5500
+[2023-07-07 01:50:57.165048][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 20] -->>  Loss: 0.2876, LR: 0.00050000
+[2023-07-07 01:50:57.396603][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 20] -->>  Loss: 0.2810, Score: 0.6812, Threshold: 0.5600
+[2023-07-07 01:51:01.515004][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 21] -->>  Loss: 0.2913, LR: 0.00050000
+[2023-07-07 01:51:01.796665][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 21] -->>  Loss: 0.3357, Score: 0.6812, Threshold: 0.4000
+[2023-07-07 01:51:05.773432][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 22] -->>  Loss: 0.2844, LR: 0.00050000
+[2023-07-07 01:51:06.027555][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 22] -->>  Loss: 0.2643, Score: 0.6812, Threshold: 0.6600
+[2023-07-07 01:51:10.431895][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 23] -->>  Loss: 0.2852, LR: 0.00050000
+[2023-07-07 01:51:10.672345][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 23] -->>  Loss: 0.3236, Score: 0.6812, Threshold: 0.4400
+[2023-07-07 01:51:15.005663][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 24] -->>  Loss: 0.2825, LR: 0.00050000
+[2023-07-07 01:51:15.221772][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 24] -->>  Loss: 0.3089, Score: 0.6812, Threshold: 0.4800
+[2023-07-07 01:51:19.553532][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 25] -->>  Loss: 0.2836, LR: 0.00050000
+[2023-07-07 01:51:19.782379][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 25] -->>  Loss: 0.2838, Score: 0.6812, Threshold: 0.5600
+[2023-07-07 01:51:23.895183][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 26] -->>  Loss: 0.2864, LR: 0.00050000
+[2023-07-07 01:51:24.138559][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 26] -->>  Loss: 0.3160, Score: 0.6812, Threshold: 0.4600
+[2023-07-07 01:51:28.339354][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 27] -->>  Loss: 0.2743, LR: 0.00050000
+[2023-07-07 01:51:28.596104][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 27] -->>  Loss: 0.2811, Score: 0.6812, Threshold: 0.5800
+[2023-07-07 01:51:32.601353][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 28] -->>  Loss: 0.2776, LR: 0.00050000
+[2023-07-07 01:51:32.837466][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 28] -->>  Loss: 0.2966, Score: 0.6812, Threshold: 0.5200
+[2023-07-07 01:51:36.961372][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 29] -->>  Loss: 0.2761, LR: 0.00050000
+[2023-07-07 01:51:37.178819][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 29] -->>  Loss: 0.3399, Score: 0.6727, Threshold: 0.4300
+[2023-07-07 01:51:40.966416][Train Model] -->> Train[Level Group: 0, Fold: 1, Epoch: 30] -->>  Loss: 0.2806, LR: 0.00050000
+[2023-07-07 01:51:41.218211][Train Model] -->> Valid[Level Group: 0, Fold: 1, Epoch: 30] -->>  Loss: 0.2576, Score: 0.6684, Threshold: 0.6500
+[2023-07-07 01:51:41.232040][Evaluation] -->> 	 Fold: 1, Level Group: 0 -->> Best Loss: 0.2576, Best Score: 0.6684 (0.650) Best Epoch: 29 	
+[2023-07-07 01:51:54.028759][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 1] -->>  Loss: 0.7230, LR: 0.00050000
+[2023-07-07 01:51:54.853519][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 1] -->>  Loss: 0.7094, Score: 0.5115, Threshold: 0.7700
+[2023-07-07 01:52:08.070240][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 2] -->>  Loss: 0.6614, LR: 0.00050000
+[2023-07-07 01:52:08.919171][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 2] -->>  Loss: 0.6532, Score: 0.5882, Threshold: 0.5800
+[2023-07-07 01:52:21.452253][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 3] -->>  Loss: 0.6450, LR: 0.00050000
+[2023-07-07 01:52:22.375837][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 3] -->>  Loss: 0.6397, Score: 0.5810, Threshold: 0.6100
+[2023-07-07 01:52:35.698656][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 4] -->>  Loss: 0.6410, LR: 0.00050000
+[2023-07-07 01:52:36.564288][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 4] -->>  Loss: 0.6542, Score: 0.5977, Threshold: 0.7100
+[2023-07-07 01:52:49.715486][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 5] -->>  Loss: 0.6406, LR: 0.00050000
+[2023-07-07 01:52:50.640271][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 5] -->>  Loss: 0.6316, Score: 0.6077, Threshold: 0.6600
+[2023-07-07 01:53:04.076775][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 6] -->>  Loss: 0.6158, LR: 0.00050000
+[2023-07-07 01:53:05.058495][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 6] -->>  Loss: 0.6188, Score: 0.6303, Threshold: 0.5900
+[2023-07-07 01:53:20.335496][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 7] -->>  Loss: 0.6030, LR: 0.00050000
+[2023-07-07 01:53:21.227994][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 7] -->>  Loss: 0.6052, Score: 0.6458, Threshold: 0.5600
+[2023-07-07 01:53:35.806950][Train Model] -->> Train[Level Group: 1, Fold: 1, Epoch: 8] -->>  Loss: 0.5905, LR: 0.00050000
+[2023-07-07 01:53:36.957505][Train Model] -->> Valid[Level Group: 1, Fold: 1, Epoch: 8] -->>  Loss: 0.5953, Score: 0.6597, Threshold: 0.6100
